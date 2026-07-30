@@ -1,0 +1,93 @@
+{
+  "pca9685": {
+    "address": 64,
+    "frequency_hz": 50.0,
+    "min_pulse_us": 500,
+    "max_pulse_us": 2500
+  },
+  "steering": {
+    "left": {
+      "channel": 0,
+      "center_us": 1500,
+      "min_us": 1200,
+      "max_us": 1800,
+      "inverted": false,
+      "trim_us": 0,
+      "calibrated": false
+    },
+    "right": {
+      "channel": 1,
+      "center_us": 1500,
+      "min_us": 1200,
+      "max_us": 1800,
+      "inverted": true,
+      "trim_us": 0,
+      "calibrated": false
+    }
+  },
+  "motors": {
+    "front_left": {
+      "channel": 2,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1100,
+      "test_max_us": 1150,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": false
+    },
+    "front_right": {
+      "channel": 3,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1100,
+      "test_max_us": 1150,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": false
+    },
+    "rear_left": {
+      "channel": 4,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1100,
+      "test_max_us": 1150,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": false
+    },
+    "rear_right": {
+      "channel": 5,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1100,
+      "test_max_us": 1150,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": false
+    }
+  },
+  "dynamics": {
+    "throttle_accel_per_s": 0.5,
+    "throttle_decel_per_s": 1.25,
+    "steering_out_per_s": 2.5,
+    "steering_recenter_per_s": 3.333333,
+    "control_hz": 50.0,
+    "key_expiry_s": 0.18
+  },
+  "arming_duration_s": 2.0,
+  "watchdog_timeout_s": 0.3,
+  "reverse_physically_verified": false,
+  "hardware_configuration_verified": false,
+  "notes": [
+    "DANGER: EVERY CHANNEL AND PULSE WIDTH IN THIS EXAMPLE IS A SIMULATION PLACEHOLDER, NOT A HARDWARE RECOMMENDATION. Measure and replace all values before setting calibrated or hardware_configuration_verified true."
+  ]
+}
