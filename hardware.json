@@ -1,0 +1,93 @@
+{
+  "pca9685": {
+    "address": 64,
+    "frequency_hz": 50.0,
+    "min_pulse_us": 500,
+    "max_pulse_us": 2500
+  },
+  "steering": {
+    "left": {
+      "channel": 0,
+      "center_us": 1540,
+      "min_us": 1450,
+      "max_us": 1635,
+      "inverted": false,
+      "trim_us": 0,
+      "calibrated": true
+    },
+    "right": {
+      "channel": 1,
+      "center_us": 1720,
+      "min_us": 1640,
+      "max_us": 1800,
+      "inverted": false,
+      "trim_us": 0,
+      "calibrated": true
+    }
+  },
+  "motors": {
+    "front_left": {
+      "channel": 13,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1200,
+      "test_max_us": 1400,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": true
+    },
+    "front_right": {
+      "channel": 15,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1200,
+      "test_max_us": 1400,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": true
+    },
+    "rear_left": {
+      "channel": 11,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1200,
+      "test_max_us": 1400,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": true
+    },
+    "rear_right": {
+      "channel": 9,
+      "safe_us": 1000,
+      "arm_us": 1000,
+      "minimum_moving_us": 1200,
+      "test_max_us": 1400,
+      "calibrated_max_us": 2000,
+      "inverted": false,
+      "reverse_channel": null,
+      "reverse_us": null,
+      "calibrated": true
+    }
+  },
+  "dynamics": {
+    "throttle_accel_per_s": 0.5,
+    "throttle_decel_per_s": 1.25,
+    "steering_out_per_s": 2.5,
+    "steering_recenter_per_s": 3.333333,
+    "control_hz": 50.0,
+    "key_expiry_s": 0.18
+  },
+  "arming_duration_s": 5.0,
+  "watchdog_timeout_s": 0.3,
+  "reverse_physically_verified": false,
+  "hardware_configuration_verified": true,
+  "notes": [
+    "Waymo milestone1ver1 hardware calibration. Keep wheels off the ground for initial testing; reverse remains disabled and physically unverified."
+  ]
+}
